@@ -4,3 +4,15 @@
     background-color: rgb(180, 244, 97);
 }
 
+.show{
+    visibility: hidden;
+}
+.show2{
+    visibility: visible;
+}
+
+.line{
+
+    margin-bottom: 20px;
+    box-shadow: 4px 4px;
+}

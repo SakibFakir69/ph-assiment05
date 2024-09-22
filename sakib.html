@@ -5,13 +5,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-
     <!-- taiwlind css add here -->
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- daisy ui add here  -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="sakib.css">
+
+
 
     <!-- style -->
     <style>
@@ -26,7 +27,6 @@
         .test {
             background: rgb(180, 244, 97);
         }
-        
     </style>
 
 
@@ -34,7 +34,7 @@
 
 <body>
 
-    <header class=" sticky top-0  backdrop-blur-lg ">
+    <header id="header" class=" sticky top-0  backdrop-blur-lg ">
         <!-- nav bar -->
 
         <div class="navbar bg text-center px-4 mx-auto">
@@ -70,17 +70,37 @@
 
     </header>
 
+    <!-- transcition history -->
+
+
     <!-- header end -->
 
     <!-- start main -->
+    <section class="flex justify-center items-center space-x-6 p-2">
 
-    <main class="border-2 border-cyan-600 container  mx-auto  px-10 mt-12">
+        <button class=" px-6 py-3 shadow-lg border-2" id="Donation-button-main">Donation</button>
+
+        <button class="shadow-xl border-2  px-6 py-3" id="History-button-main">History</button>
+
+
+
+    </section>
+
+    <section id="history" class="show w-full  justify-center mt-20 flex-col text-center">
+
+        <div id="history " class="flex-col justify-center text-center" >
+
+
+            sfghsdfg
+        </div>
+
+
+    </section>
+
+    <main class="main border-2 border-cyan-600 container  mx-auto  px-10 mt-12" id="main">
         <!-- two button -->
         <section class="flex justify-center items-center space-x-6 p-2">
 
-            <button class=" px-6 py-3 shadow-lg border-2" id="Donation-button-main">Donation</button>
-
-            <button class="shadow-xl border-2  px-6 py-3" id="History-button-main">History</button>
 
 
 
@@ -91,9 +111,9 @@
         <!-- start card  -->
 
         <section class="mt-10">
-            
 
-            <div class="flex flex-col md:flex-row" >
+
+            <div class="flex flex-col md:flex-row">
 
                 <div class="flex-1">
                     <img src="./assets/noakhali.png">
@@ -103,17 +123,19 @@
                 <div class="border-2 border-red-600 p-2 flex-1">
                     <button>0</button>
                     <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem nam ducimus vitae possimus rerum sit similique accusantium, sunt cumque dolor provident ad. Quidem autem iste aut accusantium, ut assumenda repudiandae laboriosam natus labore rerum officiis culpa, eius voluptatibus facere temporibus totam maxime ea beatae perspiciatis tempora voluptatem fugit ipsum? Tempora iusto maiores ullam placeat sequi. Fugiat sunt laboriosam molestiae cumque?
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae ut culpa, officia voluptate hic consectetur aperiam facere perspiciatis reprehenderit ab accusamus quibusdam corporis non beatae saepe sapiente ratione ea repellat dolor! Harum repudiandae mollitia eum saepe et fugit eligendi, ea asperiores aperiam rem ut eaque quae ratione 
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem nam ducimus vitae possimus rerum
+                        sit similique accusantium, sunt cumque dolor provident ad. Quidem autem iste aut accusantium, ut
+                        assumenda repudiandae laboriosam natus labore rerum officiis culpa, eius voluptatibus facere
+                        temporibus totam maxime ea beatae perspiciatis tempora voluptatem fugit ipsum? Tempora iusto
+                        maiores ullam placeat sequi. Fugiat sunt laboriosam molestiae cumque?
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae ut culpa, officia voluptate
+                        hic consectetur aperiam facere perspiciatis reprehenderit ab accusamus quibusdam corporis non
+                        beatae saepe sapiente ratione ea repellat dolor! Harum repudiandae mollitia eum saepe et fugit
+                        eligendi, ea asperiores aperiam rem ut eaque quae ratione
 
                     </p>
 
-                    <input type="number" id="input"
-
-                    class="shadow-lg border-2 w-full mb-2"
-                    
-                    
-                    >
+                    <input type="number" id="input" class="shadow-lg border-2 w-full mb-2">
 
                     <button class="color w-full py-2 rounded-md" id="button">Donate Now
                     </button>
@@ -131,9 +153,9 @@
         <!-- card 2 -->
 
         <section class="mt-10">
-            
 
-            <div class="flex flex-col md:flex-row" >
+
+            <div class="flex flex-col md:flex-row">
 
                 <div class="flex-1">
                     <img src="./assets/feni.png">
@@ -143,17 +165,19 @@
                 <div class="border-2 border-red-600 p-2 flex-1">
                     <button>0</button>
                     <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem nam ducimus vitae possimus rerum sit similique accusantium, sunt cumque dolor provident ad. Quidem autem iste aut accusantium, ut assumenda repudiandae laboriosam natus labore rerum officiis culpa, eius voluptatibus facere temporibus totam maxime ea beatae perspiciatis tempora voluptatem fugit ipsum? Tempora iusto maiores ullam placeat sequi. Fugiat sunt laboriosam molestiae cumque?
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae ut culpa, officia voluptate hic consectetur aperiam facere perspiciatis reprehenderit ab accusamus quibusdam corporis non beatae saepe sapiente ratione ea repellat dolor! Harum repudiandae mollitia eum saepe et fugit eligendi, ea asperiores aperiam rem ut eaque quae ratione 
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem nam ducimus vitae possimus rerum
+                        sit similique accusantium, sunt cumque dolor provident ad. Quidem autem iste aut accusantium, ut
+                        assumenda repudiandae laboriosam natus labore rerum officiis culpa, eius voluptatibus facere
+                        temporibus totam maxime ea beatae perspiciatis tempora voluptatem fugit ipsum? Tempora iusto
+                        maiores ullam placeat sequi. Fugiat sunt laboriosam molestiae cumque?
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae ut culpa, officia voluptate
+                        hic consectetur aperiam facere perspiciatis reprehenderit ab accusamus quibusdam corporis non
+                        beatae saepe sapiente ratione ea repellat dolor! Harum repudiandae mollitia eum saepe et fugit
+                        eligendi, ea asperiores aperiam rem ut eaque quae ratione
 
                     </p>
 
-                    <input type="number" id="input2"
-
-                    class="shadow-lg border-2 w-full mb-2"
-                    
-                    
-                    >
+                    <input type="number" id="input2" class="shadow-lg border-2 w-full mb-2">
 
                     <button class="color w-full py-2 rounded-md" id="button2">Donate Now
                     </button>
@@ -172,9 +196,9 @@
 
 
         <section class="mt-10">
-            
 
-            <div class="flex flex-col md:flex-row" >
+
+            <div class="flex flex-col md:flex-row">
 
                 <div class="flex-1">
                     <img src="./assets/quota-protest.png">
@@ -184,17 +208,19 @@
                 <div class="border-2 border-red-600 p-2 flex-1">
                     <button>0</button>
                     <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem nam ducimus vitae possimus rerum sit similique accusantium, sunt cumque dolor provident ad. Quidem autem iste aut accusantium, ut assumenda repudiandae laboriosam natus labore rerum officiis culpa, eius voluptatibus facere temporibus totam maxime ea beatae perspiciatis tempora voluptatem fugit ipsum? Tempora iusto maiores ullam placeat sequi. Fugiat sunt laboriosam molestiae cumque?
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae ut culpa, officia voluptate hic consectetur aperiam facere perspiciatis reprehenderit ab accusamus quibusdam corporis non beatae saepe sapiente ratione ea repellat dolor! Harum repudiandae mollitia eum saepe et fugit eligendi, ea asperiores aperiam rem ut eaque quae ratione 
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem nam ducimus vitae possimus rerum
+                        sit similique accusantium, sunt cumque dolor provident ad. Quidem autem iste aut accusantium, ut
+                        assumenda repudiandae laboriosam natus labore rerum officiis culpa, eius voluptatibus facere
+                        temporibus totam maxime ea beatae perspiciatis tempora voluptatem fugit ipsum? Tempora iusto
+                        maiores ullam placeat sequi. Fugiat sunt laboriosam molestiae cumque?
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae ut culpa, officia voluptate
+                        hic consectetur aperiam facere perspiciatis reprehenderit ab accusamus quibusdam corporis non
+                        beatae saepe sapiente ratione ea repellat dolor! Harum repudiandae mollitia eum saepe et fugit
+                        eligendi, ea asperiores aperiam rem ut eaque quae ratione
 
                     </p>
 
-                    <input type="number" id="input3"
-
-                    class="shadow-lg border-2 w-full mb-2"
-                    
-                    
-                    >
+                    <input type="number" id="input3" class="shadow-lg border-2 w-full mb-2">
 
                     <button class="color w-full py-2 rounded-md" id="button3">Donate Now
                     </button>
@@ -213,7 +239,7 @@
 
 
 
-    
+
 
 
 
@@ -222,7 +248,7 @@
     </main>
 
 
-    <footer>
+    <footer id="footer">
 
         <div class="h-20 bg mt-10"></div>
 
