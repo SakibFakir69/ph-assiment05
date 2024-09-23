@@ -78,7 +78,7 @@
     <!-- header end -->
 
     <!-- start main -->
-    <section class="flex justify-center items-center space-x-6 p-2  top-12 sticky bg">
+    <section class="flex justify-center items-center space-x-4 p-2  top-12 sticky  backdrop-blur-lg bg-transparent  ">
 
         <button class=" px-6 py-3 shadow-lg border-2" id="Donation-button-main">Donation</button>
 
@@ -94,7 +94,7 @@
 
     </section>
 
-    <main class="main border-2 border-cyan-600 container  mx-auto  px-10 mt-12" id="main">
+    <main class="main border-2 border-cyan-600 container  mx-auto  px-10 " id="main">
         <!-- two button -->
         <section class="flex justify-center items-center space-x-6 p-2">
 
@@ -121,7 +121,7 @@
                     <div class="flex space-x-1">
                         <img src="./assets/coin.png" class="size-5">
 
-                        <p>0</p>
+                        <p id="addMoney"></p>
                     </div>
                     <p>
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem nam ducimus vitae possimus rerum
@@ -136,26 +136,35 @@
 
                     </p>
 
-                    <input type="number" id="input" class="shadow-lg border-2 w-full mb-2 py-2" placeholder="Enter your ammount">
+                    <input type="number" id="input" class="shadow-lg border-2 w-full mb-2 py-2"
+                        placeholder="Enter your ammount">
 
                     <!-- <button class="color w-full py-2 rounded-md" id="button">Donate Now
                     </button> -->
                     <!-- modal add  -->
                     <!-- The button to open modal -->
 
-                    <label for="my_modal_6" class="btn w-full color  " id="button" >Donate Now</label>
+                    <label for="my_modal_6" class="btn w-full color  " id="button">Donate Now</label>
 
                     <!-- Put this part before tag -->
-                    <input type="checkbox" id="my_modal_6"  class="modal-toggle" />
+                    <input type="checkbox" id="my_modal_6" class="modal-toggle" />
 
                     <div class="modal" role="dialog">
-                        <div class="modal-box">
-                            
-                            <h3 class="text-lg font-bold">Hello!</h3>
-                            <p class="py-4">This modal works with a hidden checkbox!</p>
 
-                            <div class="modal-action">
-                                <label for="my_modal_6" class="btn">Close!</label>
+                        <div class="modal-box flex justify-center flex-col text-center">
+
+                            <h3 class="text-lg font-bold">Congrates!</h3>
+
+                            <div class="w-full flex justify-center mt-2">
+                                <img src="./assets/coin.png" class="size-6">
+                            </div>
+
+                            <p class="py-4 text-xl font-semibold">You have donate humankind</p>
+                            <p class="text-2xl font-bold">Succesfull</p>
+
+                            <div class="modal-action flex justify-center">
+                                <label for="my_modal_6" class="btn font-bold md:text-xl text-sm">Close
+                                    Conformation</label>
                             </div>
 
                         </div>
@@ -186,8 +195,8 @@
                 <div class="border-2 border-red-600 p-2 flex-1">
                     <div class="flex space-x-1">
                         <img src="./assets/coin.png" class="size-5">
-                        
-                        <p>0</p>
+
+                        <p id="addMoney2"></p>
                     </div>
                     <p>
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem nam ducimus vitae possimus rerum
@@ -202,24 +211,35 @@
 
                     </p>
 
-                    <input type="number" id="input2" class="shadow-lg border-2 w-full mb-2 py-2" placeholder="Enter your ammount">
+                    <input type="number" id="input2" class="shadow-lg border-2 w-full mb-2 py-2"
+                        placeholder="Enter your ammount">
 
                     <label for="my_modal_6" class="btn w-full color" id="button2">Donate Now</label>
 
                     <!-- Put this part before tag -->
-                    <input type="checkbox" id="my_modal_6"  class="modal-toggle" />
+                    <input type="checkbox" id="my_modal_6" class="modal-toggle" />
 
                     <div class="modal" role="dialog">
-                        <div class="modal-box">
-                            
-                            <h3 class="text-lg font-bold">Hello!</h3>
-                            <p class="py-4">This modal works with a hidden checkbox!</p>
 
-                            <div class="modal-action">
-                                <label for="my_modal_6" class="btn">Close!</label>
+                        <div class="modal-box flex justify-center flex-col text-center">
+
+                            <h3 class="text-lg font-bold">Congrates!</h3>
+
+                            <div class="w-full flex justify-center mt-2">
+                                <img src="./assets/coin.png" class="size-6">
+                            </div>
+
+                            <p class="py-4 text-xl font-semibold">You have donate humankind</p>
+                            <p class="text-2xl font-bold">Succesfull</p>
+
+                            <div class="modal-action flex justify-center">
+                                <label for="my_modal_6" class="btn font-bold md:text-xl text-sm">Close
+                                    Conformation
+                                </label>
                             </div>
 
                         </div>
+
                     </div>
 
 
@@ -249,8 +269,8 @@
                 <div class="border-2 border-red-600 p-2 flex-1">
                     <div class="flex space-x-1">
                         <img src="./assets/coin.png" class="size-5">
-                        
-                        <p>0</p>
+
+                        <p id="addMoney3">0</p>
                     </div>
                     <p>
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem nam ducimus vitae possimus rerum
@@ -265,21 +285,29 @@
 
                     </p>
 
-                    <input type="number" id="input3" class="shadow-lg border-2 w-full mb-2 py-2" placeholder="Enter your ammount">
+                    <input type="number" id="input3" class="shadow-lg border-2 w-full mb-2 py-2"
+                        placeholder="Enter your ammount">
 
                     <label for="my_modal_6" class="btn w-full color" id="button3">Donate Now</label>
 
                     <!-- Put this part before tag -->
-                    <input type="checkbox" id="my_modal_6"  class="modal-toggle" />
+                    <input type="checkbox" id="my_modal_6" class="modal-toggle" />
 
                     <div class="modal" role="dialog">
-                        <div class="modal-box">
-                            
-                            <h3 class="text-lg font-bold">Hello!</h3>
-                            <p class="py-4">This modal works with a hidden checkbox!</p>
 
-                            <div class="modal-action">
-                                <label for="my_modal_6" class="btn">Close!</label>
+                        <div class="modal-box flex justify-center flex-col text-center">
+                            
+                            <h3 class="text-lg font-bold">Congrates!</h3>
+
+                            <div class="w-full flex justify-center mt-2">
+                                <img src="./assets/coin.png" class="size-6">
+                            </div>
+
+                            <p class="py-4 text-xl font-semibold">You have donate humankind</p>
+                            <p class="text-2xl font-bold">Succesfull</p>
+
+                            <div class="modal-action flex justify-center">
+                                <label for="my_modal_6" class="btn font-bold md:text-xl text-sm">Close Conformation</label>
                             </div>
 
                         </div>

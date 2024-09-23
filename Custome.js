@@ -21,7 +21,7 @@ function showtranscitionHistory(str,ammount) {
 
     history.innerHTML = ' ';
 
-    let time = new Date().toLocaleDateString();
+    let time = new Date().toISOString();
 
 
 
