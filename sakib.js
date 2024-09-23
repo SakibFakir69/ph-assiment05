@@ -6,7 +6,7 @@ const ammount_header = document.getElementById("ammount-header");
 const blog_button_header = document.getElementById("blog-button-header");
 
 let taka = 6000;
-ammount_header.innerText = taka;
+ammount_header.innerText = parseFloat(taka);
 
 // end header 
 
