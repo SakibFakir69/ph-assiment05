@@ -31,8 +31,6 @@ function showtranscitionHistory(str,ammount) {
         let timeline = document.createElement("p");
 
         
-        
-
         newline.innerText = ` your histroy  ${str} ${item} BDT `;
         timeline.innerText=time;
         newline.style.fontSize="25px";
