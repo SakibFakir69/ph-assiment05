@@ -89,7 +89,7 @@ button.addEventListener("click", () => {
 
     showtranscitionHistory("inpiut 01", input.value);
 
-    taka = parseInt(taka) - parseInt(ans);
+    taka = parseFloat(taka) - parseFloat(ans);
     ammount_header.innerText = taka;
 
 
@@ -103,7 +103,7 @@ button2.addEventListener("click", () => {
 
     const ans = handelAllinputValue('input2');
 
-    taka = parseInt(taka) - parseInt(ans);
+    taka = parseFloat(taka) - parseFloat(ans);
     ammount_header.innerText = taka;
     showtranscitionHistory("input 02", input2.value)
 
@@ -117,7 +117,7 @@ button3.addEventListener("click", () => {
     const ans = handelAllinputValue('input3');
     showtranscitionHistory("inpout 02", input3.value)
 
-    taka = parseInt(taka) - parseInt(ans);
+    taka = parseFloat(taka) - parseFloat(ans);
     ammount_header.innerText = taka;
 
     console.log("button 3")
