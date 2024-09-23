@@ -1,10 +1,10 @@
 
 
 
-///coin bg gray 
-//gave card name and text 
-// full screen button center
-/// positive number
+
+
+// - input
+
 
 
 // header 
@@ -13,12 +13,11 @@ const ammount_header = document.getElementById("ammount-header");
 const blog_button_header = document.getElementById("blog-button-header");
 
 let taka = 6000;
-ammount_header.innerText = parseFloat(taka);
+ammount_header.innerText = parseFloat(taka) + " BDT";
 
-if(taka<=0)
-{
-    taka=0;
-    ammount_header.innerText=0;
+if (taka <= 0) {
+    taka = 0;
+    ammount_header.innerText = 0;
 }
 
 
@@ -91,8 +90,8 @@ History_button_main.addEventListener("click", () => {
 
 // faq
 
-blog_button_header.addEventListener("click",()=>{
-    window.location.href="./faq.html"
+blog_button_header.addEventListener("click", () => {
+    window.location.href = "./faq.html"
 })
 
 
@@ -109,91 +108,114 @@ let button = document.getElementById("button");
 console.log(button)
 // donatino
 let donation = 550.00;
-addMoney.innerText=parseFloat(donation);
+addMoney.innerText = parseFloat(donation) + " BDT";
 
 
 button.addEventListener("click", () => {
-
-    const ans = handelAllinputValue('input');
-
-    // let test = showtranscitionHistory('input');
-
-    showtranscitionHistory("inpiut 01", input.value);
-   
-
-    let add= input.value;
-    donation=parseFloat(add) + parseFloat(donation);
-    addMoney.innerText=donation;
+    if (input.value < 0) {
+        alert('Enter positive ammount')
+    } else {
 
 
-    taka = parseFloat(taka) - parseFloat(ans);
-    if(taka<=0)
-    {
-        taka=0;
+        const ans = handelAllinputValue('input');
+
+        // let test = showtranscitionHistory('input');
+
+        showtranscitionHistory("Donation for food relif Noakhali", input.value);
+
+
+        let add = input.value;
+        donation = parseFloat(add) + parseFloat(donation);
+        addMoney.innerText = donation;
+
+
+        taka = parseFloat(taka) - parseFloat(ans);
+        if (taka <= 0) {
+            taka = 0;
+        }
+
+        ammount_header.innerText = `${taka} `;
     }
-    ammount_header.innerText = taka;
 
 
-    console.log("button 1")
+
+
+
 })
 
 
-let addMoney2 =  document.getElementById("addMoney2");
+let addMoney2 = document.getElementById("addMoney2");
 console.log(addMoney2)
 
 let donation2 = 550.00;
-addMoney2.innerText=parseFloat(donation2);
+addMoney2.innerText = parseFloat(donation2) + " BDT";
 
 let input2 = document.getElementById("input2");
 let button2 = document.getElementById("button2");
+
 button2.addEventListener("click", () => {
 
-    const ans = handelAllinputValue('input2');
-        
-    let add2= input2.value;
-    donation2=parseFloat(add2)+parseFloat(donation2);
-    addMoney2.innerText=donation2; 
+    if (input2.value < 0) {
+        alert('Enter positive ammount')
+    } else {
 
-    taka = parseFloat(taka) - parseFloat(ans);
+        const ans = handelAllinputValue('input2');
 
-    if(taka<=0)
-    {
-        taka=0;
+        let add2 = input2.value;
+        donation2 = parseFloat(add2) + parseFloat(donation2);
+        addMoney2.innerText = donation2;
+
+        taka = parseFloat(taka) - parseFloat(ans);
+
+        if (taka <= 0) {
+            taka = 0;
+        }
+
+
+        ammount_header.innerText = taka;
+        showtranscitionHistory("Donation for food relif Feni", input2.value)
+
+
+
+
+
     }
 
-    ammount_header.innerText = taka;
-    showtranscitionHistory("input 02", input2.value)
 
-    console.log("button 2")
 })
 
 
 
 let addMoney3 = document.getElementById("addMoney3");
-let donatino3= 3400;
-addMoney3.innerText=parseFloat(donatino3);
+let donatino3 = 3400;
+addMoney3.innerText = parseFloat(donatino3) + " BDT";
 
 let input3 = document.getElementById("input3");
 let button3 = document.getElementById("button3");
 button3.addEventListener("click", () => {
 
-    const ans = handelAllinputValue('input3');
-    showtranscitionHistory("inpout 02", input3.value);
+    if (input3.value < 0) {
+        alert('Enter positive ammount')
+    } else {
 
-    let add3 = input3.value;
-    donatino3=parseFloat(add3)+parseFloat(donatino3);
-    addMoney3.innerText=donatino3;
+        const ans = handelAllinputValue('input3');
+        showtranscitionHistory("Donation for food relif CHT", input3.value);
+
+        let add3 = input3.value;
+        donatino3 = parseFloat(add3) + parseFloat(donatino3);
+        addMoney3.innerText = donatino3;
 
 
 
 
-    taka = parseFloat(taka) - parseFloat(ans);
+        taka = parseFloat(taka) - parseFloat(ans);
 
-    if(taka<=0)
-    {
-        taka=0;
+        if (taka <= 0) {
+            taka = 0;
+        }
+
+        ammount_header.innerText = taka;
     }
-    ammount_header.innerText = taka;
 
-    console.log("button 3")
+
 })
