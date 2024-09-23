@@ -107,7 +107,7 @@ button2.addEventListener("click", () => {
     ammount_header.innerText = taka;
     showtranscitionHistory("input 02", input2.value)
 
-    console.log("button 1")
+    console.log("button 2")
 })
 
 let input3 = document.getElementById("input3");
@@ -120,5 +120,5 @@ button3.addEventListener("click", () => {
     taka = parseInt(taka) - parseInt(ans);
     ammount_header.innerText = taka;
 
-    console.log("button 1")
+    console.log("button 3")
 })

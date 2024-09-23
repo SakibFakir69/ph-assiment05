@@ -14,5 +14,6 @@
 .line{
 
     margin-bottom: 20px;
-    box-shadow: 4px 4px;
+    box-shadow: 4px 4px 2px rgb(202, 199, 199);
+    border: 1px solid gray;
 }
