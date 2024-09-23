@@ -1,8 +1,10 @@
 
 
 
-/// blog 
-/// solve all problem
+///coin bg gray 
+//gave card name and text 
+// full screen button center
+/// positive number
 
 
 // header 
@@ -87,6 +89,14 @@ History_button_main.addEventListener("click", () => {
 
 // end
 
+// faq
+
+blog_button_header.addEventListener("click",()=>{
+    window.location.href="./faq.html"
+})
+
+
+// butotn 2
 
 
 
@@ -109,6 +119,7 @@ button.addEventListener("click", () => {
     // let test = showtranscitionHistory('input');
 
     showtranscitionHistory("inpiut 01", input.value);
+   
 
     let add= input.value;
     donation=parseFloat(add) + parseFloat(donation);
