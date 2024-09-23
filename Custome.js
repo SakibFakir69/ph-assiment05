@@ -15,7 +15,7 @@ function handelAllinputValue(id) {
 
 let history = document.getElementById("history");
 let ans = [];
-function showtranscitionHistory(ammount) {
+function showtranscitionHistory(str,ammount) {
     ans.push(ammount);
 
 
@@ -28,7 +28,7 @@ function showtranscitionHistory(ammount) {
         
         
 
-        newline.innerText = ` your histroy  ${item} `;
+        newline.innerText = ` your histroy  ${str} ${item} BDT `;
         newline.style.fontSize="25px";
         newline.style.marginTop="10px";
         newline.style.height="20px";

@@ -6,7 +6,7 @@ const ammount_header = document.getElementById("ammount-header");
 const blog_button_header = document.getElementById("blog-button-header");
 
 let taka = 6000;
-ammount_header.innerText=taka;
+ammount_header.innerText = taka;
 
 // end header 
 
@@ -25,30 +25,30 @@ let Donation_button_main = document.getElementById("Donation-button-main");
 
 
 
-Donation_button_main.addEventListener("click", ()=>{
+Donation_button_main.addEventListener("click", () => {
 
-    
+
     Donation_button_main.classList.add("color");
     History_button_main.classList.remove("color");
 
     document.getElementById("header").classList.remove('hidden');
     document.getElementById("main").classList.remove("hidden");
     document.getElementById("footer").classList.remove("hidden")
-    
+
     document.getElementById("history").classList.remove("show2");
 
-  
 
-    
-    
+
+
+
 
 })
 
 // transction hsitory
 
 
-History_button_main.addEventListener("click", ()=>{
-    
+History_button_main.addEventListener("click", () => {
+
     History_button_main.classList.add("color");
     Donation_button_main.classList.remove("color");
 
@@ -61,11 +61,11 @@ History_button_main.addEventListener("click", ()=>{
     // document.getElementById("donation_button_main").classList.add('show');
 
     document.getElementById("history").classList.add("show2");
-    
 
 
 
-    
+
+
 
 
 })
@@ -79,17 +79,18 @@ History_button_main.addEventListener("click", ()=>{
 
 let input = document.getElementById("input");
 let button = document.getElementById("button");
+console.log(button)
 
-button.addEventListener("click",()=>{
- 
+button.addEventListener("click", () => {
+
     const ans = handelAllinputValue('input');
 
     // let test = showtranscitionHistory('input');
 
-    showtranscitionHistory(input.value);
+    showtranscitionHistory("inpiut 01", input.value);
 
-    taka=parseInt(taka)-parseInt(ans);
-    ammount_header.innerText=taka;
+    taka = parseInt(taka) - parseInt(ans);
+    ammount_header.innerText = taka;
 
 
     console.log("button 1")
@@ -98,26 +99,26 @@ button.addEventListener("click",()=>{
 
 let input2 = document.getElementById("input2");
 let button2 = document.getElementById("button2");
-button2.addEventListener("click",()=>{
- 
+button2.addEventListener("click", () => {
+
     const ans = handelAllinputValue('input2');
 
-    taka=parseInt(taka)-parseInt(ans);
-    ammount_header.innerText=taka;
-    showtranscitionHistory(input2.value)
+    taka = parseInt(taka) - parseInt(ans);
+    ammount_header.innerText = taka;
+    showtranscitionHistory("input 02", input2.value)
 
     console.log("button 1")
 })
 
 let input3 = document.getElementById("input3");
 let button3 = document.getElementById("button3");
-button3.addEventListener("click",()=>{
- 
-    const ans = handelAllinputValue('input3');
-    showtranscitionHistory(input3.value)
+button3.addEventListener("click", () => {
 
-    taka=parseInt(taka)-parseInt(ans);
-    ammount_header.innerText=taka;
+    const ans = handelAllinputValue('input3');
+    showtranscitionHistory("inpout 02", input3.value)
+
+    taka = parseInt(taka) - parseInt(ans);
+    ammount_header.innerText = taka;
 
     console.log("button 1")
 })
