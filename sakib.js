@@ -101,11 +101,10 @@ blog_button_header.addEventListener("click", () => {
 
 // card
 let addMoney = document.getElementById("addMoney");
-console.log(addMoney);
 
 let input = document.getElementById("input");
 let button = document.getElementById("button");
-console.log(button)
+
 // donatino
 let donation = 550.00;
 addMoney.innerText = parseFloat(donation) + " BDT";
@@ -145,7 +144,7 @@ button.addEventListener("click", () => {
 
 
 let addMoney2 = document.getElementById("addMoney2");
-console.log(addMoney2)
+
 
 let donation2 = 550.00;
 addMoney2.innerText = parseFloat(donation2) + " BDT";

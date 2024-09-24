@@ -25,7 +25,7 @@ function showtranscitionHistory(str,ammount) {
 
 
 
-    ans.forEach((item, key) => {
+    for(let item of ans) {
         let div = document.createElement("div");
         let newline = document.createElement("p");
         let timeline = document.createElement("p");
@@ -33,7 +33,8 @@ function showtranscitionHistory(str,ammount) {
         
         newline.innerText = ` ${str} ${item} BDT `;
         timeline.innerText=time;
-        newline.style.fontSize="25px";
+        newline.style.display="inline";
+        newline.style.fontSize="20px";
         newline.style.marginTop="10px";
         newline.style.height="20px";
         
@@ -54,7 +55,7 @@ function showtranscitionHistory(str,ammount) {
 
 
 
-    })
+    }
     
     
 
